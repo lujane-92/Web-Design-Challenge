@@ -34,11 +34,6 @@ header {
   text-decoration: none;
 }
 
-.textwrap {
-  float: right;
-margin: 10px;
-}
-
 .wrapper {
   display: grid;
   grid-template-columns: 45% 45%;

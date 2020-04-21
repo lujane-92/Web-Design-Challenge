@@ -73,6 +73,11 @@ header {
     align-content: left;
   }
 
+  #mainfig2 {
+    width: 90%;
+    align-content: left;
+  }
+
   .TextWrap {
     float: left;
   }

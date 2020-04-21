@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="stylesheet-2.css">
+    <script>
+        function myFunction() {document.getElementById("myDropdown").classList.toggle("show");}
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');}}}}
+    </script>
+ 
+</head>
+<div class="container">
+    <header>
+        <a href="Landing page.html" class="Landing button">
+            <h1>Latitude</h1>
+        </a>
+        <nav>
+            <ul class="show-desktop hide desktop">
+                <li>
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Plots</button>
+                    <div id="myDropdown" class="dropdown-content">
+                      <a href="Max Temp.html">Max Temperature</a>
+                      <a href="Humidity.html">Humidity</a>
+                      <a href="Cloudiness.html">Cloudiness</a>
+                      <a href="Wind Speed.html">Windspeed</a>
+                </div></li>
+                <li><a href="Comparisons page.html">Comparison</a></li>
+                <li><a href="Data page.html">Data</a></li>
+            </ul>
+        </nav>
+    </header>
+</div>
+
+<div class="grey-container">
+    <div class="wrapper">
+        <div class="box a">
+            <h2>Cloudiness</h2>
+            <img id="mainfig2" src="images/Fig3.png" alt="Cloudiness">
+            <p>Cloudiness does not show a strong correlation to latitude. There is no discernable trend between the two.
+           </p>               
+            </div>
+
+        <div class="box b">
+            <h2>Visualizations</h2>
+            <a href="Max Temp.html">
+            <img id="fig1" src="images/Fig1.png" alt="Latitude vs. Temp">
+            </a>
+            <a href="Humidity.html">
+            <img id="fig2" src="images/Fig2.png" alt="Latitude vs. Humidity">
+            </a>
+            <a href="Cloudiness.html">
+            <img id="fig3" src="images/Fig3.png" alt="Latitude vs. Cloud">
+            </a>            
+            <a href="Wind Speed.html">
+            <img id="fig4" src="images/Fig4.png" alt="Latitude vs. Wind">
+            </a>    
+        </div>
+    </div>
+</div>
+    
+
+<footer>
+    <div class="footer-container">
+        <p class="m">Copyright Coding Bootcamp 2020</p>             
+    </div>
+</footer>
+</body>
+</html>
