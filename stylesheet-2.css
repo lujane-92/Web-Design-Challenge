@@ -43,7 +43,6 @@ header {
 }
 
 .wrapper {
-  display:flex;
   display: grid;
   grid-gap: 10px;
   background-color: #ededed;
