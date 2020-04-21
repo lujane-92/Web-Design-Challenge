@@ -5,7 +5,7 @@
     <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Landing Page</title>
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="stylesheet-2.css">
     <script>
         function myFunction() {document.getElementById("myDropdown").classList.toggle("show");}
         window.onclick = function(event) {
@@ -43,41 +43,38 @@
         </header>
     </div>
     <div class="grey-container">
-        <div class="container">
-            <div class="white-box-1">
-                <div class="container">
-                    <title>Summary: Latitude vs. X</title>
-                    <img src="images/Fig1.png" alt="Latitude vs. Temp">
-                    <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
+        <div class="wrapper">
+            <div class="box a">
+                <h2>Summary: Latitude vs. X</h2>
+                <img id="mainfig" src="images/Fig1.png" alt="Latitude vs. Temp" CLASS="TextWrap">
+                <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
 
-                        After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
-                </div>
-
-            <div class="white-box-2">
-                 <div class="container">
-                    <h2>Visualizations</h2>
-                    <a href="#">
-                    <img src="images/Fig1.png" alt="Latitude vs. Temp">
-                    </a>
-                    <a href="#"></a>
-                    <img src="images/Fig2.png" alt="Latitude vs. Humidity">
-                    </a>
-                    <a href="#"></a>
-                    <img src="images/Fig3.png" alt="Latitude vs. Cloud">
-                    </a>            
-                    <a href="#"></a>
-                    <img src="images/Fig4.png" alt="Latitude vs. Wind">
-                    </a>    
-                </div>
+                After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
             </div>
+
+            <div class="box b">
+                <h2>Visualizations</h2>
+                <a href="#">
+                <img id="fig1" src="images/Fig1.png" alt="Latitude vs. Temp">
+                </a>
+                <a href="#">
+                <img id="fig2" src="images/Fig2.png" alt="Latitude vs. Humidity">
+                </a>
+                <a href="#">
+                <img id="fig3" src="images/Fig3.png" alt="Latitude vs. Cloud">
+                </a>            
+                <a href="#">
+                <img id="fig4" src="images/Fig4.png" alt="Latitude vs. Wind">
+                </a>    
+            </div>
+        </div>
+    </div>
+        
 
     <footer>
         <div class="footer-container">
-            <div class="container">
-                <p class="Copyright">Copyright Coding Bootcamp 2020</p>             
-            </div>
+            <p class="m">Copyright Coding Bootcamp 2020</p>             
         </div>
     </footer>
-
 </body>
 </html>

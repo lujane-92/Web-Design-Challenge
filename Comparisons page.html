@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Landing Page</title>
     <link rel="stylesheet" href="stylesheet.css">
+    
     <script>
         function myFunction() {document.getElementById("myDropdown").classList.toggle("show");}
         window.onclick = function(event) {
@@ -48,22 +49,39 @@
         <div class="container">
             <h2>Comparison: Latitude vs X<h2>
             <p>Click any plot to get an in-depth analysis.</p>
-            <h3>vs. Max Temperature</h3>
-            <a href="#">
-            <img src="images/Fig1.png" alt="Latitude vs. Temp">
-            </a>
-            <h3>vs. Humidity</h3>
-            <a href="#"></a>
-            <img src="images/Fig2.png" alt="Latitude vs. Humidity">
-            </a>
-            <h3>vs. Cloudiness</h3>
-            <a href="#"></a>
-            <img src="images/Fig3.png" alt="Latitude vs. Cloud">
-            </a>   
-            <h3>vs. Wind Speed</h3>         
-            <a href="#"></a>
-            <img src="images/Fig4.png" alt="Latitude vs. Wind">
-            </a>    
+            <div class="wrapper">
+                <div class="box a">
+                    <h3>vs. Max Temperature</h3>
+                    <a href="#">
+                    <img id="fig1" src="images/Fig1.png" alt="Latitude vs. Temp">
+                    </a>
+                </div>  
+
+                <div class="box b">
+                    <h3>vs. Humidity</h3>
+                    <a href="#"></a>
+                    <img id="fig2" src="images/Fig2.png" alt="Latitude vs. Humidity">
+                    </a>
+                </div>
+
+
+                <div class="box c">
+                    <h3>vs. Cloudiness</h3>
+                    <a href="#"></a>
+                    <img id="fig3" src="images/Fig3.png" alt="Latitude vs. Cloud">
+                    </a>   
+                 </div>
+
+
+            
+                 <div class="box d">
+                    <h3>vs. Wind Speed</h3>         
+                    <a href="#"></a>
+                    <img id="fig4" src="images/Fig4.png" alt="Latitude vs. Wind">
+                    </a>
+                </div> 
+            </div>    
+
         </div>
     </div>
 
