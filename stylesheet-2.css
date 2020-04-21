@@ -141,8 +141,7 @@ h3 {
 p.m {
   color: #fff;
   font-size: 20px;
-  align-content: center;
-  padding-left: 30em;
+  text-align: center;
 }
 
 .container {
@@ -152,7 +151,7 @@ p.m {
 .footer-container {
   width: 100%;
   background: #3D444A;
-  padding: 3em;
+  padding: 1em;
 }
 
 li {
@@ -210,7 +209,7 @@ table {
   margin:40px;
 }
 th, td, tr {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 0.2px solid #ddd;
   color: rgb(0, 0, 0);
 }
 
@@ -220,6 +219,8 @@ tr:hover {
 
 tr:nth-child(even) {
   background-color: #f2f2f2;
+  border-right: none;
+  border-left: none;
 }
 
 th {
@@ -227,4 +228,3 @@ th {
   color: rgb(0, 0, 0);
   font-weight: bold;
 }
-

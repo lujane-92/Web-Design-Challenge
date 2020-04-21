@@ -47,6 +47,25 @@ header {
   color: #fff;
   
 }
+#fig1 {
+  width: 100%;
+  align-content: left;
+}
+
+#fig2 {
+  width: 100%;
+  align-content: left;
+}
+
+#fig3 {
+  width: 100%;
+  align-content: left;
+}
+
+#fig4 {
+  width: 100%;
+  align-content: left;
+}
 
 .white-box-1{
   width: 100%;
@@ -86,8 +105,7 @@ h3 {
 p.m {
   color: #fff;
   font-size: 20px;
-  align-content: center;
-  padding-left: 30em;
+  text-align: center;
 }
 
 .container {
@@ -97,7 +115,7 @@ p.m {
 .footer-container {
   width: 100%;
   background: #3D444A;
-  padding: 3em;
+  padding: 1em;
 }
 
 li {
@@ -119,11 +137,6 @@ li {
   font-size: 14px;
   border: none;
   cursor: pointer;
-}
-
-/* Dropdown button on hover & focus */
-.dropbtn:hover, .dropbtn:focus {
-  background-color: #2980B9;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -155,4 +168,27 @@ li {
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
 
+table {
+  width: 80%;
+  margin:40px;
+}
+th, td, tr {
+  border-bottom: 0.2px solid #ddd;
+  color: rgb(0, 0, 0);
+}
 
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+  border-right: none;
+  border-left: none;
+}
+
+th {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
