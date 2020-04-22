@@ -5,80 +5,88 @@
     <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Landing Page</title>
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheet-2.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  
     
-    <script>
-        function myFunction() {document.getElementById("myDropdown").classList.toggle("show");}
-        window.onclick = function(event) {
-            if (!event.target.matches('.dropbtn')) {
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                    var openDropdown = dropdowns[i];
-                    if (openDropdown.classList.contains('show')) {
-                        openDropdown.classList.remove('show');}}}}
-    </script>
  
 </head>
-<div class="container">
-    <header>
-        <a href="Landing page.html" class="Landing button">
-            <h1>Latitude</h1>
+<body>
+    
+        <header>
+            <a href="Landing page.html" class="Landing button">
+                <h1>Latitude</h1>
             </a>
-            <nav>
-                <ul class="show-desktop hide-mobile">
-                    <li>
-                    <div class="dropdown">
-                        <button onclick="myFunction()" class="dropbtn">Plots</button>
-                        <div id="myDropdown" class="dropdown-content">
-                          <a href="Max Temp.html">Max Temperature</a>
-                          <a href="Humidity.html">Humidity</a>
-                          <a href="Cloudiness.html">Cloudiness</a>
-                          <a href="Wind Speed.html">Windspeed</a>
-                    </div></li>
-                    <li><a href="Comparisons page.html">Comparison</a></li>
-                    <li><a href="Data page.html">Data</a></li>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     Plots
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="Max Temp.html">Max Temperature</a>
+                      <a class="dropdown-item" href="Humidity.html">Humidity</a>
+                      <a class="dropdown-item" href="Cloudiness.html">Cloudiness</a>
+                      <a class="dropdown-item" href="Wind Speed.html">Wind Speed</a>
+                    </div>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Comparisons page.html">Comparisons</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Data page.html">Data</a>
+                  </li>
                 </ul>
+              </div>
             </nav>
         </header>
- </div>
 
     <body>
 
     <div class="white-box-1">
-        <div class="container">
-            <h2>Comparison: Latitude vs X<h2>
-            <p>Click any plot to get an in-depth analysis.</p>
+       
+            
             
             <div class="wrapper">
-                <div class="box a">
-                    <h3>vs. Max Temperature</h3>
-                    <a href="Max Temp.html">
-                    <img id="fig1" src="images/Fig1.png" alt="Latitude vs. Temp">
-                    </a>
-                </div>  
-
                 <div class="box b">
-                    <h3>vs. Humidity</h3>
-                    <a href="Humidity.html"></a>
-                    <img id="fig2" src="images/Fig2.png" alt="Latitude vs. Humidity">
-                    </a>
-                </div>
-
-
-                <div class="box c">
-                    <h3>vs. Cloudiness</h3>
-                    <a href="Cloudiness.html"></a>
-                    <img id="fig3" src="images/Fig3.png" alt="Latitude vs. Cloud">
-                    </a>   
-                 </div>
-
-            
-                 <div class="box d">
-                    <h3>vs. Wind Speed</h3>         
-                    <a href="Wind Speed.html"></a>
-                    <img id="fig4" src="images/Fig4.png" alt="Latitude vs. Wind">
-                    </a>
+                    <h2>Comparison: Latitude vs X<h2>
+                    <p>Click any plot to get an in-depth analysis.</p>
+                    
+                    <div class="row">
+                        <div class="col-lg-6" style="padding: 30px;">
+                          <div class="title">vs. Max Temperature</div>
+                          <a href="Max Temp.html">
+                            <img class="panel" src="images/Fig1.png" alt="Max Temperature Image">
+                          </a>
+                        </div>
+                        <div class="col-lg-6" style="padding: 30px;">
+                          <div class="title">vs. Humidity</div>
+                          <a href="Humidity.html">
+                            <img class="panel" src="images/Fig2.png" alt="Humidity Graph">
+                          </a>
+                        </div>
+                      </div>
+          
+                      <div class="row">
+                        <div class="col-lg-6" style="padding: 30px;">
+                          <div class="title">vs. Cloudiness</div>
+                          <a href="Cloudiness.html">
+                            <img class="panel" src="images/Fig3.png" alt="Cloudiness Graph">
+                          </a>
+          
+                        </div>
+                        <div class="col-lg-6" style="padding: 30px;">
+                          <div class="title">vs. Wind Speed</div>
+                          <a href="Wind Speed.html">
+                            <img class="panel" src="images/Fig4.png" alt="Wind Speed Graph">
+                          </a>
+                        </div>   
                 </div>
             </div>    
 
